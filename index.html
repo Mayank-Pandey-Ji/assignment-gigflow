@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gig Worker Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="signup-form">
+        <h1>Join Our Gig Worker Platform</h1>
+        <form id="workerForm">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name">
+                <div class="error" id="nameError">Please enter your full name</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address">
+                <div class="error" id="emailError">Please enter a valid email address</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="skillCategory">Skill Category</label>
+                <select id="skillCategory" name="skillCategory">
+                    <option value="">-- Select your primary skill --</option>
+                    <option value="design">Design & Creative</option>
+                    <option value="development">Web Development</option>
+                    <option value="writing">Content Writing</option>
+                    <option value="marketing">Digital Marketing</option>
+                    <option value="video">Video Production</option>
+                    <option value="audio">Audio Production</option>
+                    <option value="admin">Virtual Assistant</option>
+                    <option value="data">Data Entry & Analysis</option>
+                    <option value="other">Other</option>
+                </select>
+                <div class="error" id="skillError">Please select a skill category</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="portfolio">Portfolio Link</label>
+                <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com">
+                <div class="error" id="portfolioError">Please enter a valid URL (including http:// or https://)</div>
+            </div>
+            
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+    
+    <div class="thank-you" id="thank-you-message">
+        <h2>Thank You for Signing Up!</h2>
+        <p>We've received your application and will review it shortly.</p>
+        <p>You'll receive a confirmation email with next steps.</p>
+    </div>
+
+    
+</body>
+
+<script src="index.js"></script>
+</html>
